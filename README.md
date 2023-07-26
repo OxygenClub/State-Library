@@ -19,6 +19,11 @@ void table:SetCallback(function NewCallback)
 ```lua
 void table:SetKey(string NewKey)
 ```
+
+```lua
+(string, int, boolean, table, function, instance) table:GetValue(void)
+```
+
 -------
 
 ```lua
@@ -31,4 +36,8 @@ void State:SetCallback(string Key, function Callback)
 
 ```lua
 void State:SetKey(string Key, string NewKey)
+```
+
+```lua
+(string, int, boolean, table, function, instance) State:GetValue(string Key)
 ```
