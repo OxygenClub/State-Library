@@ -6,7 +6,7 @@ State library for LUA
 ```lua
 table State:Create(string Key, (string, int, boolean, table, function, instance) InitValue, function Callback)
 ```
-## Table Properties
+Table Properties
 
 ```lua
 void table:Update((string, int, boolean, table, function, instance) NewValue)
@@ -19,7 +19,7 @@ void table:SetCallback(function NewCallback)
 ```lua
 void table:SetKey(string NewKey)
 ```
-
+-------
 
 ```lua
 void State:Update(string Key, (string, int, boolean, table, function, instance) Value)
