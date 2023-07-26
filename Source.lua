@@ -37,6 +37,10 @@ function State:Create(Key, InitValue, Callback)
         -- // Inserts new key
         State.Values[StateTbl.Key] = StateTbl
     end
+
+    function StateTbl:GetValue()
+        return StateTbl.Value
+    end
     
     return StateTbl
 end
@@ -66,6 +70,16 @@ function State:SetKey(Key, NewKey)
         local StateTbl = State.Values[Key]
         
         StateTbl:SetKey(NewKey)
+    else
+        print("Invalid key: ", Key)
+    end
+end
+
+function State:GetValue(Key)
+    if State.Values[Key] then
+        local StateTbl = State.Values[Key]
+        
+        return StateTbl:GetValue()
     else
         print("Invalid key: ", Key)
     end
